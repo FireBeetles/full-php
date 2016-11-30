@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+   Business Architecture
+   Product XML - Consulting Site
+   Author: Shane Meier
+   Date:   11/14/2016
+
+   Filename:         products.xml
+   Supporting Files: products.xsl
+
+-->
+
+<?xml-stylesheet type="text/xsl" href="products.xsl" ?>
+
+<products>
+	<product>
+		<name>Warehouse Trends</name>
+		<basePrice></basePrice> <!-- NA -->
+		<description>Find out which product is moving and maximize your available space by prioritizing your product.</description>
+	</product>
+	<product>
+		<name>Web Traffic</name>
+		<basePrice></basePrice> <!-- NA -->
+		<description>See what markets are visiting your site the most. What is the age, race, and gender of your customer? Maximize your marketing potential</description>
+	</product>
+	<product>
+		<name>Data Services</name>
+		<basePrice></basePrice> <!-- NA -->
+		<description>That can provide already accumulated information in bundles.</description>
+	</product>
+	<product>
+		<name>Consulting</name>
+		<basePrice></basePrice> <!-- NA -->
+		<description>If you find yourself unable to make a quality sales pitch of the information Data Dwarves provides we will send one of our excellent data specialists to help smooth the presentation in the manner of your choosing.</description>
+	</product>
+</products>

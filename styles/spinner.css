@@ -1,0 +1,108 @@
+/* Style formatting for the front-page spinner */
+
+@keyframes spinnerspin {
+	0%	{opacity: 0;}
+	30%	{opacity: 1;}
+	60%	{opacity: 0;}
+	100%	{opacity: 0;}
+}
+
+#spinner {
+	width: 1200px;
+	height:500px;
+	margin: 25px auto;
+	
+}
+
+#spinner .spinbutton {
+	position:relative;
+	top:225px;
+	height:50px;
+	width:50px;
+	z-index:1;
+	background-color:rgba(188,188,188,0.8);
+	border: 0px solid;
+	border-radius: 25px;
+	text-align: center;
+	line-height:50px;
+	font-size:35px;
+	
+	-webkit-transition: background-color 0.5s;
+	transition: background-color 0.5s;
+	
+	visibility:hidden;
+}
+
+#spinner .spinbutton a {
+	color:white;
+	text-decoration:none;
+	display:block;
+	width:100%;
+}
+
+#spinner .spinbutton:hover {
+	background-color:rgba(160,160,160,1.0);
+}
+
+/*#spinner #left:active ~ element {
+	transition: all 0s;	
+}*/
+
+#leftspin {
+	left: 10px;
+	float:left;
+}
+
+#rightspin {
+	right: 10px;
+	float:right;
+}
+
+#spinnercontent {
+	width: 1200px;
+	height:500px;
+	display:block;
+	margin:0px;
+	padding:0px;
+	position:relative;
+	top:0px;
+	left:0px;
+}
+
+#spinner .spinnerstory {
+	width: 1200px;
+	height:500px;
+	position:absolute;
+	float:left;
+	border:1px solid black;
+	list-style:none;
+	
+	animation:spinnerspin 16s infinite;
+	opacity:0;
+}
+
+#spinner .spinnerstory a {
+	display:block;
+	width:100%;
+	height:100%;
+}
+
+#spinner #spinnerstory1 {
+	animation-delay:-4s;
+	background-image: url(../images/code2.jpg);
+}
+
+#spinner #spinnerstory2 {
+	animation-delay:0s;
+	background-image: url(../images/support.png);
+}
+
+#spinner #spinnerstory3 {
+	animation-delay:4s;
+	background-image: url(../images/globe2.jpg);
+}
+
+#spinner #spinnerstory4 {
+	animation-delay:8s;
+	background-image: url(../images/pro2.jpg);
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+ 	Consulting Website 
+	Author: 
+	Date:   
+
+	Filename:    faq.xml
+	Supporting Files: faq.xsl
+
+-->
+<?xml-stylesheet type="text/xsl" href="faq.xsl" ?>
+
+<faq>
+	
+	<entry question="1">
+		<question>How will I understand the information you provide me?</question>
+		<answer>Data Dwarves can provide the information requested in almost any fashion desired. 
+			Graphs, Written Notes, Charts are only a few of our available options.
+		</answer>
+	</entry>
+	
+	<entry question="2">
+		<question>Why would you be a better data service over others?</question>
+		<answer>
+		Operating with the latest network and database technology, Data Dwarves 
+		is quickly rising in the ranks of Data Analyzing while not requiring the compensation of 
+		established data corporations.
+		</answer>
+	</entry>
+	
+	<entry question="3">
+		<question>You are a newer company how can I trust you?</question>
+		<answer>
+			We here at Data Dwarves keep a customer-centric mentality at all times. 
+			It is pivotal to us that our customers big and small alike receive the same treatment when it comes to our services. 
+			As a new company we want to build a positive reputation within our community.
+		</answer>
+	</entry>
+</faq>
