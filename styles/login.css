@@ -1,0 +1,36 @@
+#login {
+	display:block;
+	border:1px solid black;
+	width: 250px;
+	height: 100px;
+	float:right;
+	margin: 20px;
+	padding: 5px;
+	background-color:white;
+}
+
+#login div {
+	margin-bottom: 5px;
+}
+
+#login .label {
+	width: 4.5em;
+	display:inline-block;
+}
+
+#login #username {
+	
+}
+
+#login #pw {
+	
+}
+
+#login #submit {
+	width:55px;
+	margin: 5px auto;
+}
+
+#login #submit input {
+	width: 55px;
+}

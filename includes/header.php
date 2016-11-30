@@ -1,6 +1,9 @@
 <?php session_start();?>
 <header>
 	<div id="logo"></div>
+	<?php 
+		include 'includes\login.php';
+	?>
 	<nav>
 		<ul>
 			<li><a href="index.php">Main</a></li>
