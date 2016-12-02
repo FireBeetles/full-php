@@ -5,16 +5,81 @@
 	</head>
 	<body>
 		<?php include 'includes\header.php'; ?>
-		<?php if(!isset($_SESSION['username'])) {
-			$_SESSION['error'] = 'Please log in before accessing data pages.';
-			exit(header("Location:http://localhost/cweb2101-consultingsite/login.php"));
-		} else { ?>
 		<article>
-			<img src="images/Bar graph.png" alt="Bar Graph">
-			<img src="images/pie chart.png" alt="Pie Chart">
-			<img src="images/line graph.png" alt="Line Graph">
+			
+    <div class="container">
+        <div id="chart2">
+        <h3 style="text-align: center;">Population of School by Students</h3>
+        <canvas id="myPieChart" width="200" height="200"></canvas>
+       </div>
 		</article>
-		<?php }
-		include 'includes\footer.php'; ?>
+		<?php include 'includes\footer.php' ?>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+	<script src="schoolData.json"></script>
+ <script>
+var ctz = document.getElementById("myPieChart");
+var myPieChart = new Chart(ctz, {
+    type: 'bar',
+    data: {
+        labels: ["Woodbury Senior High School", "East Ridge High School","Tartan Senior High School","Como Park Senior High School","North Senior High School"],
+        datasets: [{
+            label: 'Number of Students at School',
+            data: (function(){
+			   var totals = {
+				   'Woodbury Senior High School': 0,
+				   'East Ridge Senior High School': 0,
+				   'Tartan Senior High School': 0,
+				   'Como Park Senior High School': 0,
+				   'North Senior High School': 0,
+			   }
+               data.forEach(function(element){
+				   if(element.SCHOOL == "Woodbury Senior High School"){
+					   totals['Woodbury Senior High School'] += element.STUDENT_POPULATION
+				   }else if(element.SCHOOL == "East Ridge Senior High School"){
+					   totals['East Ridge Senior High School'] += element.STUDENT_POPULATION
+				   }else if(element.SCHOOL == "Tartan Senior High School"){
+					   totals['Tartan Senior High School'] += element.STUDENT_POPULATION
+				   }else if(element.SCHOOL == "Como Park Senior High School"){
+					   totals['Como Park Senior High School'] += element.STUDENT_POPULATION
+				   }else if(element.SCHOOL == "North Senior High School"){
+					   totals['North Senior High School'] += element.STUDENT_POPULATION
+				   }
+			   })
+               return [totals['Woodbury Senior High School'],totals['East Ridge Senior High School'],totals['Tartan Senior High School']
+			   ,totals['Como Park Senior High School'],totals['North Senior High School']];
+           })(),
+            backgroundColor: [
+                'rgba(54, 162, 235, 0.8)',
+                'rgba(0, 255, 0, 0.8)',
+                'rgba(255, 100, 86, 0.8)',
+                'rgba(75, 192, 192, 0.8)',
+                'rgba(255, 255, 64, 0.8)',
+            ],
+            borderColor: [
+                'rgba(54, 162, 235,1)',
+                'rgba(0, 255, 0, 1)',
+                'rgba(255, 100, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(255, 255, 64, 1)',
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+</script>
 	</body>
 </html>
