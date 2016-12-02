@@ -1,0 +1,51 @@
+#login {
+	display:block;
+	border:1px solid black;
+	width: 250px;
+	height: 100px;
+	float:right;
+	margin: 20px;
+	padding: 5px;
+	background-color:rgba(255,255,255,0.5);
+	text-align: center;
+}
+
+#login div {
+	margin-bottom: 5px;
+}
+
+#login:before{
+	content:'';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	margin-right: -0.25em; /* Adjusts for spacing */
+}
+#login #logincontain {
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+	margin-bottom:0px;
+}
+
+#login .label {
+	width: 4.5em;
+	display:inline-block;
+}
+
+#login #username {
+	
+}
+
+#login #pw {
+	
+}
+
+#login #submit {
+	width:55px;
+	margin: 5px auto;
+}
+
+#login #submit input {
+	width: 55px;
+}
