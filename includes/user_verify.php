@@ -23,6 +23,8 @@ for ($i = 0; $i < count($userdata); $i++){
 		$_SESSION['logged_in'] = true;
 		//unset password
 		unset($userdata->account[$i]->password);
+		//unset any log-in errors
+		unset($_SESSION['error']);
 		//store important data to session state
 		$_SESSION['username'] = $loginname->__toString();
 		$_SESSION['useremail'] = $loginemail->__toString();
