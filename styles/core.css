@@ -42,7 +42,7 @@ header nav ul li {
 	float: left;
 	padding:0 5px;
 	height:100%;
-	width:11%;
+	width:8%;
 	text-align:center;
 	margin-left: 5%;
 	
@@ -67,7 +67,7 @@ header nav ul li a {
 #logo {
 	width: 450px;
 	height: 150px;
-	background-image: url(../images/ddlogo.png);
+	background-image: url(../images/logonum3.png);
 	display: inline-block;
 
 }
@@ -123,4 +123,28 @@ footer{
 
 #about {
 	height:500px;
+}
+
+table{
+   border: 1px solid black;
+   margin: auto;
+}
+
+#school {
+	height: 30px;
+}
+
+.piechart{
+		margin: auto;
+		height: 500px;
+		width: 350px;
+	
+	
+}
+
+.tblehd{
+	font-size: 30px;
+	color: orange;
+	border: 1px solid black;
+	
 }
