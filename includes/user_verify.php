@@ -29,7 +29,7 @@ for ($i = 0; $i < count($userdata); $i++){
 		$_SESSION['username'] = $loginname->__toString();
 		$_SESSION['useremail'] = $loginemail->__toString();
 		//print_r($_SESSION);
-		//return to redirect - maybe can specify entry point for redirect back to original referent page?
+		//return to redirect - return to login or to a referent point specified in $_SESSION['redirect']
 		exit(header("Location: ../redirect.php"));
 	}
 }

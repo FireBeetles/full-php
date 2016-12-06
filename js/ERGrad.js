@@ -29,9 +29,9 @@ $(function () {
             type: 'pie',
             name: 'Graduation Percentage',
             data: [
-                ['graduate', 95.0],
+                ['Successfully graduate', 95.0],
                 {
-                    name: 'do not garduate',
+                    name: 'Do not graduate',
                     y: 5.0,
                     sliced: true,
                     selected: true

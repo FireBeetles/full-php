@@ -31,7 +31,7 @@ $(function () {
             data: [
                 ['Caucasian', 76.0],
                 {
-                    name: 'Minorites',
+                    name: 'Minorities',
                     y: 24,
                     sliced: true,
                     selected: true

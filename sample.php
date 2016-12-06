@@ -4,7 +4,7 @@
 		<?php include 'includes\dependencies.php' ?>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 		<style type="text/css">
-${demo.css}
+			${demo.css}
 		</style>
 				<script src="js/WBGR.js"></script>
 				<script src="js/WBMP.js"></script>
@@ -22,7 +22,12 @@ ${demo.css}
 		<script src="https://code.highcharts.com/highcharts-3d.js"></script>
 		<script src="https://code.highcharts.com/modules/exporting.js"></script>
 
-		<?php include 'includes\header.php'; ?>
+		<?php include 'includes\header.php';
+		if(!isset($_SESSION['username'])) {
+			$_SESSION['error'] = 'Please log in before accessing data pages.';
+			$_SESSION['redirect'] = basename($_SERVER['PHP_SELF']);
+			exit(header("Location:http://localhost/cweb2101-consultingsite/login.php"));
+		} else { ?>
 		<article>
 			<table>
 				<h1>Woodbury Senior High School</h1>
@@ -81,6 +86,7 @@ ${demo.css}
 			</table>
 			
 		</article>
-		<?php include 'includes\footer.php' ?>
+		<?php }
+		include 'includes\footer.php' ?>
 	</body>
 </html>
