@@ -2,6 +2,7 @@ $(function () {
     Highcharts.chart('NSmin', {
         chart: {
             type: 'pie',
+			width: 400,
             options3d: {
                 enabled: true,
                 alpha: 45,
