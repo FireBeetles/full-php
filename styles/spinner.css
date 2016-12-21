@@ -106,3 +106,32 @@
 	animation-delay:8s;
 	background-image: url(../images/pro2.jpg);
 }
+
+@media screen and (max-width: 1200px){
+	#spinner {
+		width: 750px;
+		height: 312px;
+		margin: 25px auto;
+	}
+	
+	#spinnercontent {
+		width: 750px;
+		height: 312px;
+	}
+	
+	#spinner .spinnerstory {
+		width: 750px;
+		height: 312px;
+		background-size: 750px 312px;
+	}
+}
+
+@media screen and (max-width: 800px){
+	#spinner {
+		display:none;
+	}
+	
+	#spinner [id^="spinnerstory"] {
+		animation-play-state: paused;
+	}
+}

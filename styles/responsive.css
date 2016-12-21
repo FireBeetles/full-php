@@ -1,0 +1,63 @@
+@media screen and (max-width: 600px){
+	#logo {
+		display:block;
+		clear: both;
+		margin: 0 auto;
+	}
+	
+	#login {
+		display:block !important;
+		clear: both !important;
+		margin: 20px auto !important;
+		float: none !important;
+	}
+}
+
+@media screen and (max-width: 875px) {
+	header nav ul {
+		width: 750px;
+	}
+	
+	header nav ul li {
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	header nav {
+		height: 70px;
+	}
+	
+	header nav ul {
+		width: 450px;
+		height: 70px;
+	}
+	
+	header nav ul li {
+		height: 35px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	header nav {
+		height: 175px;
+	}
+	
+	header nav ul {
+		height: 175px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	
+	header nav ul li {
+		width: 100%;
+	}
+	
+	p {
+		font-size: 18px;
+	}
+	
+	h1 {
+		margin: 0;
+	}
+}
