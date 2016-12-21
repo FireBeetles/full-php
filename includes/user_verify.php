@@ -14,7 +14,7 @@ for ($i = 0; $i < count($userdata); $i++){
 	if(empty($_POST["username"]) || empty($_POST["pw"]))
 	{
 		$_SESSION['error']='Please fill in both username and password';
-		exit(header("Location:http://localhost/cweb2101-consultingsite/login.php"));
+		exit(header("Location:".$SITE."login.php"));
 	}
 
 
@@ -36,5 +36,5 @@ for ($i = 0; $i < count($userdata); $i++){
 
 //exited loop without a valid match - invalid log-in information
 $_SESSION['error']='Invalid username or password';
-exit(header("Location:http://localhost/cweb2101-consultingsite/login.php"));
+exit(header("Location:".$SITE."login.php"));
 ?>

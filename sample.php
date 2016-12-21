@@ -38,11 +38,11 @@
 		<script src="https://code.highcharts.com/modules/exporting.js"></script>
 
 		<?php include 'includes\header.php';
-		if(!isset($_SESSION['username'])) {
+		/*if(!isset($_SESSION['username'])) {
 			$_SESSION['error'] = 'Please log in before accessing data pages.';
 			$_SESSION['redirect'] = basename($_SERVER['PHP_SELF']);
-			exit(header("Location:http://localhost/full-php-master/full-php-master/login.php"));
-		} else { ?>
+			exit(header("Location:".$SITE."login.php"));
+		} else {*/ ?>
 		<article>
 		
 			<div class="container">
@@ -149,7 +149,7 @@
 				
 			</div>
 		</article>
-		<?php }
+		<?php //} 
 		include 'includes\footer.php' ?>
 						<script>
 					var ctz = document.getElementById("myPieChart");
