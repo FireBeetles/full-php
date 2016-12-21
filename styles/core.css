@@ -27,24 +27,24 @@ header nav {
 header nav ul {
 	display: block;
 	list-style-type: none;
+	padding: 0;
+	width: 875px;
 	margin: 0 auto;
-	padding: 0 5%;
-	width:100%;
 	font-family: DejaVuSansMono;
-	font-size: 25px;
+	font-size: 0; /*Avoid rendering whitespace within the ul due to inline nature of li tags*/
+	text-align: center;
 	color: #00b300;
 	
 }
 
 header nav ul li {
-	display: list-item;
+	display: inline-block;
 	list-style-type: none;
-	float: left;
 	padding:0 5px;
 	height:100%;
-	width:11%;
-	text-align:center;
-	margin-left: 5%;
+	width:140px;
+	margin: 0 12.5px;
+	font-size: 25px;
 	
 	-webkit-transition: background-color,color 0.2s;
 	transition: background-color,color 0.2s;
@@ -65,7 +65,7 @@ header nav ul li a {
 }
 
 #logo {
-	width: 450px;
+	width: 275px;
 	height: 150px;
 	background-image: url(../images/logonum3.png);
 	display: inline-block;
@@ -73,7 +73,8 @@ header nav ul li a {
 }
 
 article {
-	width:1200px;
+	width: 90%;
+	max-width:1200px;
 	box-sizing: border-box;
 	border-style: outset;
 	border-color: #b8b894;
