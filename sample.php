@@ -37,7 +37,7 @@
 		if(!isset($_SESSION['username'])) {
 			$_SESSION['error'] = 'Please log in before accessing data pages.';
 			$_SESSION['redirect'] = basename($_SERVER['PHP_SELF']);
-			exit(header("Location:http://localhost/full-php-master/full-php-master/login.php"));
+			exit(header("Location:http://localhost/cweb2101-consultingsite/login.php"));
 		} else { ?>
 		<article>
 			<button type="button" onclick="myFunction()">Select School</button>
